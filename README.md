@@ -1,14 +1,14 @@
 # AutomationTTnode
 甜糖自动收取星星推送微信
 使用方法：server酱那张图可以看怎么获取自己的sckey（需要绑定微信，需要gihub账号登录，地址：http://sc.ftqq.com/）（有问题可以进群找三只松鼠问，有空就给你回答）
-比如我把ttnodeConfig.py和sendTTnodeMSG.py两个文件放在了/root目录下
-那么我先运行  python /root/ttnodeConfig.py      按照提示输入手机号码和验证码和sckey。
-然后我再运行  python /root/sendTTnodeMSG.py   ,然后查看微信时候有消息推送。
-有推送证明已经成功了。
+\n比如我把ttnodeConfig.py和sendTTnodeMSG.py两个文件放在了/root目录下
+\n那么我先运行  python /root/ttnodeConfig.py      按照提示输入手机号码和验证码和sckey。
+\n然后我再运行  python /root/sendTTnodeMSG.py   ,然后查看微信时候有消息推送。
+\n有推送证明已经成功了。
 
 op的请把下面的定时规则添加到计划任务。其它armbian或其它linux的请运行crontab -e 把下面的规则添加进去。
-15 1 * * *的意思是每天的1点15分执行这个命令，可以自行修改时间。
-15 1 * * * python /root/sendTTnodeMSG.py
+\n15 1 * * *的意思是每天的1点15分执行这个命令，可以自行修改时间。
+\n15 1 * * * python /root/sendTTnodeMSG.py
 
 以上命令由于环境不一样，命令不一样，如果提示python 命令找不到的，请把上面命令中的python改成python3
 
