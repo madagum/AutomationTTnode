@@ -1,0 +1,1 @@
+15 1 * * * python3 /root/sendTTnodeMSG.py
