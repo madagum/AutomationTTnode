@@ -1,2 +1,4 @@
+
 15 1 * * * python3 /root/AutomationTTnode/sendTTnodeMSG.py
+
 0 12 * * * cd /root/AutomationTTnode && git pull
